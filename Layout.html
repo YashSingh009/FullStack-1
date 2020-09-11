@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+    
+        #container {
+            width: 1200px;
+            border: 1px solid black;
+            margin: 0px auto;
+        }
+        #Header {
+            height: 70px;
+            background-color: lightgray;
+            margin: 15px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            font-size: 40px;
+            border-radius: 15px;
+        }
+        #Left-Header {
+            width: 20%;
+            float: left;
+           margin: 0px 10px;
+        }
+        #Content {
+            height: 715px;
+        }
+        #Content::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #Right-Header {
+            width: 78%;
+            float: right;
+        }
+       #Main-content {
+           background-color: tomato;
+           height: 715px;
+           display: flex;
+           justify-content: center;
+           text-align: center;
+           color: white;
+           font-size: 40px
+           
+       }
+        #Nav {
+            height: 500px;
+            background-color: violet;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            font-size: 40px
+            border-radius
+        }
+        #News {
+            height: 200px;
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            font-size: 40px
+        }
+        #Footer {
+            height: 70px;
+            background-color: lightgray;
+            margin: 15px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            font-size: 40px;
+            border-radius: 15px;
+        }
+
+    </style>
+</head>
+<body>
+   <div id="container">
+       <div id="Header">Header</div>
+       <div id="Content">
+       <div id="Left-Header">
+           <div id="Nav">Navigation</div>
+           <div id="News">News</div>
+       </div>
+       <div id="Right-Header">
+           <div id="Main-content">Main-Content</div>
+       </div>
+       </div>
+       <div id="Footer">Footer</div>
+   </div> 
+
+</body>
+</html>
